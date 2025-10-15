@@ -1,10 +1,12 @@
 body {
-  background-color: #f5f6fa;
+  /* background-color: #f5f6fa; */
   color: #2f3640;
   margin: 0;
   padding: 0;
   font-family: "biorhyme-variable", sans-serif;
   font-variation-settings: "wdth" 100, "wght" 800;
+  background-image: url('bg.jpeg');
+  background-size: 100% 100%;
 }
 
 p{
