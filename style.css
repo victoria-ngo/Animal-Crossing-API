@@ -45,16 +45,18 @@ box-sizing: border-box;
 
 button {
   padding: 10px 20px;
-  background-color: #44bd32;
+  background-color: #a6e764;
   color: white;
   border: none;
   border-radius: 10px;
   font-size: 16px;
   cursor: pointer;
+   font-family: "biorhyme-variable", sans-serif;
+  font-variation-settings: "wdth" 100;
 }
 
 button:hover {
-  background-color: #4cd137;
+  background-color: #91ed36;
 }
 
 .filter {
