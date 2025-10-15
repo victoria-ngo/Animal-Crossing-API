@@ -1,0 +1,91 @@
+body {
+  background-color: #f5f6fa;
+  color: #2f3640;
+  margin: 0;
+  padding: 0;
+  font-family: "biorhyme-variable", sans-serif;
+  font-variation-settings: "wdth" 100, "wght" 800;
+}
+header img{
+  display: block;
+   margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+  width: 20%;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+form {
+  margin-bottom: 30px;
+}
+
+input {
+  padding: 10px;
+  width: 60%;
+  border: 2px solid #718093;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: "biorhyme-variable", sans-serif;
+font-variation-settings: "wdth" 100, "wght" 800;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #44bd32;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4cd137;
+}
+
+.filter {
+  margin-bottom: 30px;
+}
+
+select {
+  padding: 10px;
+  width: 60%;
+  border: 2px solid #718093;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.villager-card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+  width: 140px;
+  height: 200px;
+}
+
+.villager-card:hover {
+  transform: translateY(-5px);
+}
+
+.villager-card img {
+  width: 110px;
+  height: 150px;
+  border-radius: 50%;
+}
