@@ -40,6 +40,7 @@ input {
   font-size: 16px;
   font-family: "biorhyme-variable", sans-serif;
 font-variation-settings: "wdth" 100, "wght" 800;
+box-sizing: border-box;
 }
 
 button {
@@ -66,7 +67,7 @@ select {
   border: 2px solid #718093;
   border-radius: 10px;
   font-size: 16px;
-  margin-right: 20px;
+  box-sizing: border-box;
 }
 
 .results {
