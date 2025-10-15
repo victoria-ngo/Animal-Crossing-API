@@ -6,6 +6,12 @@ body {
   font-family: "biorhyme-variable", sans-serif;
   font-variation-settings: "wdth" 100, "wght" 800;
 }
+
+p{
+  font-family: "biorhyme-variable", sans-serif;
+  font-variation-settings: "wdth" 100;
+}
+
 header img{
   display: block;
    margin-left: auto;
