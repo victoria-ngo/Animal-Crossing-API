@@ -53,9 +53,10 @@ function showVillagerDetails(villager) {
   <span class="close-btn">&times;</span>
   <h2>${villager.name}</h2>
   <img src="${villager.image_url}" alt="${villager.name}">
-  <p><strong>Personality:</strong> ${villager.personality}</p>
   <p><Strong>Species:</strong> ${villager.species}</p>
-  <p><Strong>Birthday:</strong> ${villager.birthday_month} ${villager.birthday_day}</p>
+   <p><Strong>Birthday:</strong> ${villager.birthday_month} ${villager.birthday_day}</p>
+  <p><strong>Personality:</strong> ${villager.personality}</p>
+  <p><Strong>VillagerPage:</strong> ${villager.url}</p>
   </div>
   `;
   document.body.appendChild(modal);
