@@ -124,8 +124,8 @@ select {
 }
 
 .modal-content img {
-  width: 110px;
-  height: 150px;
+  width: 200px;
+  height: 270px;
   border-radius: 50%;
 }
 
@@ -152,5 +152,5 @@ select {
 }
 
 .close-btn:hover {
-  color: #fbfeb2;
+  color: #ff0000;
 }
