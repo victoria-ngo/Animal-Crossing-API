@@ -19,7 +19,7 @@ speciesList.forEach(species => {
   speciesSelect.appendChild(option);
 });
 
-// Common function to display results
+// Function to display results
 function displayVillagers(data, species) {
   const resultsDiv = document.getElementById("results");
   if (data.length === 0) {
@@ -35,8 +35,38 @@ function displayVillagers(data, species) {
       <img src="${villager.image_url}" alt="${villager.name}">
       <h3>${villager.name}</h3>
     `;
+card.addEventListener("click", () => showVillagerDetails(villager));
+
     resultsDiv.appendChild(card);
   });
+}
+
+function showVillagerDetails(villager) {
+  const oldModal = document.getElementById("villager-modal");
+  if (oldModal) oldModal.remove();
+
+  const modal = document.createElement("div");
+  modal.id = "villager-modal";
+  
+  modal.innerHTML = `
+  <div class="modal-content">
+  <span class="close-btn">&times;</span>
+  <h2>${villager.name}</h2>
+  <img src="${villager.image_url}" alt="${villager.name}">
+  <p><strong>Personality:</strong> ${villager.personality}</p>
+  <p><Strong>Species:</strong> ${villager.species}</p>
+  <p><Strong>Hobby:</strong> ${villager.hobby}</p>
+  </div>
+  `;
+  document.body.appendChild(modal);
+
+  const closeBtn = modal.querySelector(".close-btn");
+ if (closeBtn) {
+  closeBtn.addEventListener("click", () => modal.remove());
+ }
+  modal.addEventListener("click", (e) => {
+      if (e.target === modal) modal.remove();
+    });
 }
 
 // Function to fetch villagers by search bar
